@@ -137,7 +137,7 @@ row2_col1, row2_col2 = st.columns([2, 1])
 with row2_col1:
     st.subheader("Historical Trends & Model Projections")
     # Generate dummy data
-    dates = pd.date_range(start='2025-01-01', periods=12, freq='ME')
+    dates = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     data = pd.DataFrame({
         'Date': dates,
         'Approval Rate': [72, 75, 71, 78, 82, 80, 85, 83, 88, 86, 91, 89],
